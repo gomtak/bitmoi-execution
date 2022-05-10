@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: execution-service
+  jpa:
+    hibernate:
+      ddl-auto: create
+      properties:
+        hibernate:
+          show_sql: true
+          format_sql: true
+    show-sql: true
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/some_db?useUnicode=true&characterEncoding=utf8
+    username: gompang
+    password: gompang
+logging.level:
+  org.hibernate.SQL: debug
+
+server:
+  port: 0
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+
