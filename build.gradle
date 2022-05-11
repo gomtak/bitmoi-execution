@@ -14,6 +14,9 @@ repositories {
 
 dependencies {
 //	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	//Unable to load io.netty.resolver.dns.macos error처리를 위함
+	implementation 'io.netty:netty-resolver-dns-native-macos:4.1.68.Final:osx-aarch_64'
+
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'org.springframework.kafka:spring-kafka'
 	implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
