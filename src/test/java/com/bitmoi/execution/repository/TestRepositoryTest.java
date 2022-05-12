@@ -14,7 +14,6 @@ class TestRepositoryTest {
 
     @Autowired
     TestRepository testRepository;
-
     @Test
     void 테이블저장(){
         Mono<TestTable> test = testRepository.save(new TestTable(1,"Test"));

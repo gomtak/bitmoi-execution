@@ -1,8 +1,8 @@
 spring:
   r2dbc:
-    url: r2dbc:mysql://127.0.0.1:3306/sys?characterEncoding=UTF-8&serverTimezone=UTC
+    url: r2dbc:mysql://127.0.0.1:3306/test?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
     username: root
-    password: gt2268641!
+    password: Tak2268641!
 #  application:
 #    name: execution-service
 #  jpa:

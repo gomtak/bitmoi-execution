@@ -1,4 +1,4 @@
-package com.bitmoi.execution;
+package com.bitmoi.execution.config;
 
 import dev.miku.r2dbc.mysql.MySqlConnectionConfiguration;
 import dev.miku.r2dbc.mysql.MySqlConnectionFactory;
@@ -18,11 +18,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import static reactor.netty.http.HttpProtocol.H2C;
 
 @Configuration
-public class R2dbcConfig extends AbstractR2dbcConfiguration {
-
-    @Override
-    public ConnectionFactory connectionFactory() {
-        return MySqlConnectionFactory.from(MySqlConnectionConfiguration.builder()
-                .host("127.0.0.1").password("gt2268641!").port(3306).database("sys").username("root").build());
-    }
+public class R2dbcConfig{
+//
+//    @Override
+//    public ConnectionFactory connectionFactory() {
+//        return MySqlConnectionFactory.from(MySqlConnectionConfiguration.builder()
+//                .host("127.0.0.1").password("Tak2268641!").port(3306).database("test").username("root").build());
+//    }
 }
